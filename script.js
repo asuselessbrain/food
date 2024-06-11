@@ -29,48 +29,62 @@ const foodArr = [
   },
 ];
 
-function handleShowMore() {
-   const foodContainer = document.getElementById("card-container");
- 
-   for (const item of foodArr) {
-     const foodDivItem = document.createElement("div");
- 
-     foodDivItem.innerHTML = `
-       <img
-         src="${item.url}"
-         alt="Avatar"
-         style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
-       />
-       <div class="card-content">
-         <div class="name-rating">
-           <h4><b>${item.header}</b></h4>
-           <div class="rating">
-             <img src="./images/star.png" width="18px" alt="" />
-             <p>4.9</p>
-           </div>
-         </div>
-         <div class="add-to-cart-price">
-           <button class="add-to-cart">Add To Cart</button>
-           <p>$18.50</p>
-         </div>
-       </div>
-     `;
- 
-     foodContainer.appendChild(foodDivItem);
-   }
- }
+let isShowingMore = false;
 
-function handleSubscribe(event) {
-   event.preventDefault();
+function handleToggle() {
+  const foodContainer = document.getElementById("card-container");
+  const toggleButton = document.getElementById("toggle-button");
 
-   const email = event.target.email.value;
+  if (!isShowingMore) {
+    // Show more items
+    for (const item of foodArr) {
+      const foodDivItem = document.createElement("div");
+      foodDivItem.className = "extra-item";
 
-   const successContainer = document.getElementById("success-container");
+      foodDivItem.innerHTML = `
+                        <img
+                            src="${item.url}"
+                            alt="Avatar"
+                            style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+                        />
+                        <div class="card-content">
+                            <div class="name-rating">
+                                <h4><b>${item.header}</b></h4>
+                                <div class="rating">
+                                    <img src="./images/star.png" width="18px" alt="" />
+                                    <p>4.9</p>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-price">
+                                <button class="add-to-cart">Add To Cart</button>
+                                <p>$18.50</p>
+                            </div>
+                        </div>
+                    `;
 
-   const successParagraph = document.createElement('p');
-   successParagraph.innerText = "Subscription Successful";
+      foodContainer.appendChild(foodDivItem);
+    }
 
-   successContainer.appendChild(successParagraph);
+    toggleButton.innerText = "Show Less Items";
+    isShowingMore = true;
+  } else {
+    const extraItems = document.querySelectorAll(".extra-item");
+    extraItems.forEach((item) => item.remove());
+
+    toggleButton.innerText = "See More Products";
+    isShowingMore = false;
+  }
 }
 
- 
+function handleSubscribe(event) {
+  event.preventDefault();
+
+  const email = event.target.email.value;
+
+  const successContainer = document.getElementById("success-container");
+
+  const successParagraph = document.createElement("p");
+  successParagraph.innerText = "Subscription Successful";
+
+  successContainer.appendChild(successParagraph);
+}

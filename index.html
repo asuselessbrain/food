@@ -240,18 +240,13 @@
           </div>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center;">
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
           <button
-            style="
-              padding: 10px 20px;
-              border-radius: 30px;
-              border: none;
-              background-color: #f48e28;
-              color: white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            " onclick="handleShowMore()"
+            id="toggle-button"
+            class="toggle-button"
+            onclick="handleToggle()"
           >
             See More Products
           </button>
@@ -356,13 +351,12 @@
             <input
               type="email"
               name="email"
-              placeholder="Type your email....." required
+              placeholder="Type your email....."
+              required
             />
             <input type="submit" value="Subscribe" id="send-btn" />
           </form>
-          <div id="success-container">
-
-          </div>
+          <div id="success-container"></div>
         </div>
       </section>
     </main>

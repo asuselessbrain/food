@@ -375,6 +375,18 @@ footer p {
   color: #b6b6b6;
 }
 
+.toggle-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f48e28;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;
