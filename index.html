@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="./images/logo.png" width="70px" alt="" />
+      </div>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="#">Home</a></li>
+        <li class="navbar-item"><a href="#">About</a></li>
+        <li class="navbar-item"><a href="#">Services</a></li>
+        <li class="navbar-item"><a href="#">Contact</a></li>
+        <li class="navbar-item search-item">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Go</button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="banner-section">
+        <div class="banner-text">
+          <div class="bike-delivery">
+            <p>Bike Delivery</p>
+            <img width="40px" src="./images/delivery-bike.png" alt="" />
+          </div>
+          <h2 class="banner-header">
+            The Fastest <span class="text-color">Delivery</span> <br />In
+            <span class="text-color">Your City</span>
+          </h2>
+          <p style="margin: 40px 0; font-size: 18px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo,
+            sed proin amet a vestibulum enim volutpat lacus. Volutpat arcu sit
+            sed tortor etiam volutpat ipsum.
+          </p>
+          <div class="btn-container">
+            <button class="order-now">Order Now</button>
+            <button class="order-process">
+              <img style="width: 30px" src="./images/play.png" alt="" />
+              <p>Order Process</p>
+            </button>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="img">
+            <img width="278px" src="./images/burger.avif" alt="" />
+            <h4 style="margin-top: 20px">Burger</h4>
+            <p style="margin: 10px 0">Mushroom Sauce</p>
+            <h5><span style="color: red">$</span>5.15</h5>
+          </div>
+          <div class="img">
+            <img width="278px" src="./images/combo.avif" alt="" />
+            <h4 style="margin-top: 20px">Food Combo</h4>
+            <p style="margin: 10px 0">Mushroom Sauce</p>
+            <h5><span style="color: red">$</span>9.15</h5>
+          </div>
+          <div class="img">
+            <img width="278px" src="./images/pizza.jpg" alt="" />
+            <h4 style="margin-top: 20px">Pizza</h4>
+            <p style="margin: 10px 0">Mushroom Sauce</p>
+            <h5><span style="color: red">$</span>6.15</h5>
+          </div>
+          <div class="img">
+            <img width="278px" src="./images/cake.jpg" alt="" />
+            <h4 style="margin-top: 20px">Cake</h4>
+            <p style="margin: 10px 0">Mushroom Sauce</p>
+            <h5><span style="color: red">$</span>5.15</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="place-container">
+        <div class="place-child">
+          <img width="42px" src="./images/clock.png" alt="" />
+          <h5>Today 10:00am - 10:00pm</h5>
+          <p style="font-size: 13px">Working time</p>
+        </div>
+
+        <div class="place-child">
+          <img width="42px" src="./images/placeholder.png" alt="" />
+          <h5>Today 10:00am - 10:00pm</h5>
+          <p style="font-size: 13px">Working time</p>
+        </div>
+
+        <div class="place-child">
+          <img width="42px" src="./images/telephone.png" alt="" />
+          <h5>Today 10:00am - 10:00pm</h5>
+          <p style="font-size: 13px">Working time</p>
+        </div>
+      </section>
+
+      <section>
+        <div style="text-align: center">
+          <p style="color: #f48e28">Product</p>
+          <h3 style="margin: 5px 0 15px; font-size: 36px">
+            Most Popular Items
+          </h3>
+        </div>
+        <div id="card-container" class="card-container">
+          <div class="card">
+            <img
+              src="./images/gyro-sandwich.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Gyro Sandwhic</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>4.9</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$18.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Enchilade.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Enchilade</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>5</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$28.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Green Beans.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Green Beans</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>5</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$12.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Pizza2.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Pizza</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>5</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$18.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Chicken Pot Pie.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Chicken Pot Pie</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>4.9</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$10.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Green Salad.jpg"
+              alt="Avatar"
+              style="width: 100%; border-radius: 15px 15px 0 0; height: 333px"
+            />
+            <div class="card-content">
+              <div class="name-rating">
+                <h4><b>Green Salad</b></h4>
+                <div class="rating">
+                  <img src="./images/star.png" width="18px" alt="" />
+                  <p>4.9</p>
+                </div>
+              </div>
+              <div class="add-to-cart-price">
+                <button class="add-to-cart">Add To Cart</button>
+                <p>$14.50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <button
+            style="
+              padding: 10px 20px;
+              border-radius: 30px;
+              border: none;
+              background-color: #f48e28;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            " onclick="handleShowMore()"
+          >
+            See More Products
+          </button>
+        </div>
+      </section>
+
+      <section style="margin: 80px 0">
+        <div style="text-align: center">
+          <p style="color: #f48e28">Services</p>
+          <h3 style="margin: 5px 0 15px; font-size: 36px">
+            Why Choose Our Favorite Food
+          </h3>
+        </div>
+
+        <div class="Services-container">
+          <div class="Services-card">
+            <img src="./images/food-safety.png" width="98px" alt="Avatar" />
+            <div class="services-content">
+              <h4 class="heading"><b>Qualityfull Food</b></h4>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasur and prasising pain was bron.
+              </p>
+            </div>
+          </div>
+
+          <div class="Services-card">
+            <img src="./images/healthy-heart.png" width="98px" alt="Avatar" />
+            <div class="services-content">
+              <h4 class="heading"><b>Healthy Food</b></h4>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasur and prasising pain was bron.
+              </p>
+            </div>
+          </div>
+
+          <div class="Services-card">
+            <img src="./images/fast-delivery.png" width="98px" alt="Avatar" />
+            <div class="services-content">
+              <h4 class="heading"><b>Fast Delivery</b></h4>
+              <p>
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasur and prasising pain was bron.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div style="text-align: center">
+          <p style="color: #f48e28">Testimonials</p>
+          <h3 style="margin: 5px 0 15px; font-size: 36px">
+            Our Happy Client Says
+          </h3>
+        </div>
+
+        <div class="review-container">
+          <div class="review-card">
+            <div class="review-image">
+              <img
+                src="https://randomuser.me/api/portraits/women/17.jpg"
+                width="98px"
+                style="border-radius: 100%"
+                alt="Avatar"
+              />
+              <div>
+                <h4 class="review-heading heading"><b>Willians Jhone</b></h4>
+                <p>CEO & Co-Founder</p>
+              </div>
+            </div>
+            <div class="services-content">
+              <p class="review">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                nisl tincidunt adipiscing dictumst blandit hac. Lectus cras
+                velit sed dignissim ac, aliquet. Metus egestas habitant feugiat
+                neque ultrices nunc, dolor egestas mus.”
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="combo"
+            src="./images/colorful-fast-food-combo.avif"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <img src="./images/burger2.png" alt="" />
+
+        <div class="subscribe-content">
+          <h3>Subcribe To Our Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipidrscing elit. Purus
+            mauris sem sed urna venenatis vivamus. Egestas in velit nulla
+            viverra turpis id ac. Amet faucibus tempus.
+          </p>
+          <form onsubmit="handleSubscribe(event)">
+            <input
+              type="email"
+              name="email"
+              placeholder="Type your email....." required
+            />
+            <input type="submit" value="Subscribe" id="send-btn" />
+          </form>
+          <div id="success-container">
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+
+    <footer>
+      <div>
+        <img src="./images/logo.png" width="100px" alt="" />
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo
+          libero viverra dapibus odio sit malesuada in quis. Arcu tristique
+          elementum viverra integer id.
+        </p>
+        <div class="icons">
+          <img width="42px" src="./images/facebook.png" alt="" />
+          <img width="52px" src="./images/twitter.png" alt="" />
+          <img width="42px" src="./images/linkedin.png" alt="" />
+          <img width="82px" src="./images/instagram.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-header">Opening Restaurant</h4>
+        <p>Sat-Wet: 09:00am-10:00PM</p>
+        <p>Thursdayt: 09:00am-11:00PM</p>
+        <p>Friday: 09:00am-8:00PM</p>
+      </div>
+      <div>
+        <h4 class="footer-header">User Link</h4>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Order Delivery</p>
+        <p>Payment & Tex</p>
+        <p>Terms of Services</p>
+      </div>
+      <div>
+        <h4 class="footer-header">Contact Us</h4>
+        <p>Mohammadpur, Dhaka</p>
+        <p>+88 017 0000 0000</p>
+        <p>+88 018 0000 0000</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
